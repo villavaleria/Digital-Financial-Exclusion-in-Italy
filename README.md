@@ -17,18 +17,18 @@ The analysis operationalises digital exclusion at two levels:
 
 The study is structured into three interconnected sequential phases, implemented across three Jupyter Notebooks:
 
-### 1. Data Preparation (`Phase1_Data_Prep.ipynb`)
+### 1. Data Preparation (`DataPreparation.ipynb`)
 - **Data Cleaning**: Handling special non-response codes (`-97`, `-98`, `-99`, `-999`).
 - **Index Creation**: Building a two-level "Digital Financial Exclusion" indicator and a continuous Digital Adoption Score (DAS).
 - **Literacy Scoring**: Constructing an objective Financial Literacy Score (0-7) following the standard OECD/INFE methodology.
 - **Demographic Formatting**: Collapsing socio-demographic variables (age, education, employment, income) into tractable analytical categories.
 
-### 2. Descriptive Profiling (`Phase2_Descriptive.ipynb`)
+### 2. Descriptive Profiling (`DescriptiveAnalysis.ipynb`)
 - **Univariate Analysis**: Profiling non-adopters across socio-demographic dimensions using survey-weighted cross-tabulations.
 - **Visualizations**: Generating stacked bar charts to illustrate the weighted distribution of digital exclusion status by gender, age, education, geographic area, municipality type, employment, and income.
 - **Paradox Identification**: Identifying confounding effects (e.g., the apparent association between high education and exclusion, driven by the elderly cohort).
 
-### 3. Statistical Modelling (`Phase3_Modelling.ipynb`)
+### 3. Statistical Modelling (`StatisticalModelling.ipynb`)
 - **Weighted Logistic Regression**: Estimating the independent association between socio-demographic predictors/financial literacy and the binary digital-exclusion outcome, controlling for all other predictors.
 - **K-Means Clustering**: Applying unsupervised clustering on internet users to identify distinct latent profiles based on Digital Adoption, Financial Literacy, Age, Income, and Education.
 - **Dimensionality Reduction**: Using PCA projection for visual validation of cluster separation.
